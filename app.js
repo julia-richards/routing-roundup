@@ -1,7 +1,11 @@
 const express = require('express');
 const app = express();
 
-app.get("/", (req, res) => {
+app.set('view engine', 'pug')
+
+
+app.get("/*", (req, res) => {
+    // res.render()
     res.send("Hello from Express!");
 });
 

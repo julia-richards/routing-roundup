@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 	res.send("Hello from Express!");
 });
 
-app.get(.endsWith('xyz'), (req, res) => {
+app.get('/*xyz', (req, res) => {
     res.send("That's all I wrote.");
 });
 
